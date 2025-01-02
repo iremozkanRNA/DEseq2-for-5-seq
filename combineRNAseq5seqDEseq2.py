@@ -1,10 +1,10 @@
 import pandas as pd
 
 # Load your data
-oneQ = pd.read_csv("/Users/merinakzo/Desktop/Stuff/AMeyer_Lab/Experiment_results/5seq/5seqBeds/5seqDEseq2/deseq2_Ksg1qvsNDCresults.csv")
-threeQ = pd.read_csv("/Users/merinakzo/Desktop/Stuff/AMeyer_Lab/Experiment_results/5seq/5seqBeds/5seqDEseq2/deseq2_Ksg3qvsNDCresults.csv")
-frank = pd.read_csv("/Users/merinakzo/Desktop/Stuff/AMeyer_Lab/Experiment_results/5seq/5seqBeds/KsgData_fRanked.csv")
-rnaseq = pd.read_csv("/Users/merinakzo/Desktop/Stuff/AMeyer_Lab/Experiment_results/RNA-Seq Feb 24,2022/ShinyomicsDerivedSignidicanceFiles/T4_Ksg_RNAseq_1Q.csv")
+oneQ = pd.read_csv("path/to/your/file/deseq2_Ksg1qvsNDCresults.csv")
+threeQ = pd.read_csv("path/to/your/file//deseq2_Ksg3qvsNDCresults.csv")
+frank = pd.read_csv("path/to/your/file/5seqBeds/KsgData_fRanked.csv")
+rnaseq = pd.read_csv("path/to/your/RNAseqResultsFile/T4_Ksg_RNAseq_1Q.csv")
 
 # Initialize new columns
 frank["fiveseqDEseq2"] = ""
