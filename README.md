@@ -1,8 +1,8 @@
-****Differential Expression Analysis Using DESeq2
+**Differential Expression Analysis Using DESeq2**
 
 This script is designed to perform differential expression analysis using the R package DESeq2. It processes count data from RNA sequencing experiments, compares treated and control conditions, and outputs the results as a CSV file.
 
-****Prerequisites
+**Prerequisites**
 
 Before running this script, ensure that the following are installed and available in your R environment:
 1. R version 4.0 or later
@@ -11,7 +11,7 @@ Before running this script, ensure that the following are installed and availabl
 `dplyr`
 `DESeq2`
 
-****Script Workflow
+**Script Workflow**
 
 1.	Setup
 	•	The script begins by clearing the R environment (`rm(list=ls())`) and loading the required libraries (`data.table`, `dplyr`, and `DESeq2`).
