@@ -2,12 +2,12 @@
 rm(list=ls())
 library(dplyr)
 
-files <- list.files(path ="~/Desktop/Stuff/AMeyer_Lab/Experiment_results/5seq/5seqBeds/5seqBedsOnly/Ksg_NDC/Processed/" , pattern = "*.bed",full.names = T)
+files <- list.files(path ="~/Desktop/Stuff/AMeyer_Lab/Experiment_results/5seq/5seqBeds/5seqBedsOnly/Chl_3Q/Processed/" , pattern = "*.bed",full.names = T)
 temp <- read.delim(files[[1]], header = FALSE)
 temp1 <- read.delim(files[[2]], header = FALSE)
-temp3 <- read.delim(files[[3]], header = F)
-outputfilename <- "~/Desktop/Stuff/AMeyer_Lab/Experiment_results/5seq/5seqBeds/5seqBedsOnly/CountMatrix/316-Processed_KsgNDCt60_ReadLenght_CountMatrix.csv"
-analyzed <- read.csv("~/Desktop/Stuff/AMeyer_Lab/Experiment_results/5seq/TSSPredIremOutput/KsgData_nofRank.csv") %>% filter(Genome == "NDCt60")
+temp2 <- read.delim(files[[3]], header = F)
+outputfilename <- "~/Desktop/Stuff/AMeyer_Lab/Experiment_results/5seq/5seqBeds/5seqBedsOnly/CountMatrix/316-Processed_Chl3Qt60_ReadLenght_CountMatrix.csv"
+analyzed <- read.csv("~/Desktop/Stuff/AMeyer_Lab/Experiment_results/5seq/TSSPredIremOutput/ChlData_nofRank.csv")
 
 temp <- temp[,-c(4,5)]
 
